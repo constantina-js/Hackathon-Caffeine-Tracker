@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="caffeine, hackathon, MLH, hackNY, sleep, Fall 2015">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>	<link href='caffeine.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="caffeine.js"></script>
+	<title>Hackathon Caffeine Tracker</title>
+</head>
+<body>
+	<div id="container">
+		<h1>Hackathon Caffeine Tracker</h1>
+		<h3>Keep track of your caffeine consumption as you hack!</h3>
+		
+		
+		<div class="count" id="count"> </div>
+		
+		<div id="caffeine-sources"> 
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="keurig" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Keurig K-Cup</h1>  
+					<h2>150mg/8 fl. oz.</h2> 
+				</div> 
+			</div>
+
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="sbucks" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Starbucks Double Shot</h1> 
+					<h2>146mg/15 fl. oz.</h2>
+				</div> 
+			</div>
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="mountaindew" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Mountain Dew</h1> 
+					<h2>54mg/12 fl. oz.</h2>
+				</div> 
+			</div>
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="pepsi" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Pepsi</h1> 
+					<h2>38mg/12 fl. oz.</h2> 
+				</div> 
+			</div>
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="coke" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Coke</h1> 
+					<h2>35mg/12 fl. oz.</h2>
+				</div> 
+			</div>
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="five" onClick="incrementCaffeine()"> ^ </button>
+					<h1>5-hour Energy</h1> 
+					<h2>208mg/12 fl. oz.</h2>
+				</div> 
+			</div>
+			
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="monster" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Monster Energy</h1> 
+					<h2>160mg/12 fl. oz.</h2>
+				</div> 
+			</div>
+			
+			
+			<div class ="source-wrapper">
+				<div class="source">
+					<button class="button" id="redbull" onClick="incrementCaffeine()"> ^ </button>
+					<h1>Red Bull</h1> 
+					<h2>80mg/8.4 fl. oz.</h2>
+				</div> 
+			</div>
+		</div>
+	</div>
+</body>
+<footer><br><h8>  &copy; Made with love by <a href="https://github.com/conscou" style="text-decoration: none">Constantina Scoullis</a></footer>
+</html>
