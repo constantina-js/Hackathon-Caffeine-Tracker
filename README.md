@@ -1,3 +1,7 @@
+*Edit* 9/8/18 - revisting this old hackathon project and trying to convert it to a React web app
+
+------
+
 The most clutch, last-minute hackathon project ever for HackNY Fall 2015.
 
 <br>A mobile-friendly, semi-responsive (but not really) <a href="http://conscou.github.io/Hackathon-Caffeine-Tracker/">website</a> that you may use to keep track of your caffeine consumption.The options were based on the most common brands of caffeinated drinks I have seen inthe previous hackathons I attended.
