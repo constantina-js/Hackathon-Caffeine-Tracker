@@ -1,0 +1,44 @@
+[ 
+    { 
+        "name": "Keurig K-Cup",
+        "amount": 150,
+        "servingAmount": 8
+    },
+    {
+        "name": "Starbucks Double Shot",
+        "amount": 146,
+        "servingAmount": 15
+        
+    },
+    {
+        "name": "Mountain Dew",
+        "amount": 54,
+        "servingAmount": 12
+    },
+    {
+        "name": "Pepsi",
+        "amount": 38,
+        "servingAmount": 12
+    },
+    {
+        "name": "Coke",
+        "amount": 35,
+        "servingAmount": 12
+    },
+    {
+        "name": "5-hour Energy",
+        "amount": 208,
+        "servingAmount": 12
+    },
+    {
+        "name": "Monster Energy",
+        "amount": 160,
+        "servingAmount": 12
+    },
+    {
+        "name": "Red Bull",
+        "amount": 80,
+        "servingAmount": 8.4
+
+    }
+]
