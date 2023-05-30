@@ -1,3 +1,43 @@
 .counter {
     margin: 10rem auto;
 }
+
+.buttonContainer {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.caffeineSource {
+    width: 380px;
+    height: 140px;
+    margin: 2.5rem;
+    display: inline-block;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.caffeineSource span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.caffeineSource button {
+    margin-top: 2rem;
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+
+.caffeineSource img {
+    height: 140px;
+    width: 140px;
+    border: 1px solid #090909;
+    float:left;
+    margin-right: 2rem;
+}
+
+.resetButton {
+    display: block;
+    margin: 2rem auto 0 auto;
+
+}
