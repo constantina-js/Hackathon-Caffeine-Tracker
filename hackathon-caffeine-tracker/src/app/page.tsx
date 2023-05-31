@@ -14,7 +14,7 @@ export default function Home() {
   let dataRows = [[]];
   let dataRowsIndex = 0;
   let dataCount = 0;
-  for(let i=0; i<data.length; i++){
+  for(let i=0; i<data.length-1; i++){
     if(dataCount < 3) {
       dataRows[dataRowsIndex].push(data[i])
       dataCount++;
@@ -27,11 +27,19 @@ export default function Home() {
 
   const onCaffeineClick = (addedAmount:number) => {
     setCaffeine(totalCaffeine + addedAmount);
+    if(totalCaffeine >= 10000){
+        setMessage('How are you not dead yet? Do you need me to call 911?');
+      } else if (totalCaffeine < 10000 && totalCaffeine >= 1000){
+        setMessage('Seriously stop and go get yourself some water');
+      } else if(totalCaffeine < 1000 && totalCaffeine >= 400){
+        setMessage(`Okay you're good you should stop now`);
+    }
     return;
   }
 
   const resetCounter = () => {
     setCaffeine(0);
+    setMessage('');
     return;
   }
 
@@ -44,22 +52,24 @@ export default function Home() {
       <Counter {...counterProps}></Counter>
       <div className={css.buttonContainer}>
         <table>
-        {
-          dataRows.map(x => {
-           return (
-           <tr>
-            {x.map((y) => {
-                const caffeineSourceProps = {...y, onClickFunc: onCaffeineClick}
-                return (
-                  <td>
-                    <CaffeineSource {...caffeineSourceProps}></CaffeineSource>
-                  </td>
-                )
-            })}
-           </tr>
-           )
-          })
-        }
+          <tbody>
+          {
+            dataRows.map(x => {
+            return (
+              <tr>
+                {x.map((y) => {
+                    const caffeineSourceProps = {...y, onClickFunc: onCaffeineClick}
+                    return (
+                      <td>
+                        <CaffeineSource {...caffeineSourceProps}></CaffeineSource>
+                      </td>
+                    )
+                })}
+              </tr>
+            )
+            })
+          }
+          </tbody>
         </table>
       </div>
 
